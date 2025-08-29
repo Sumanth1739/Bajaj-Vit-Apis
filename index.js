@@ -6,11 +6,11 @@ app.use(cors());
 app.use(express.json());
 
 const FULL_NAME = "john_doe";
-const DOB = "17091999"; // ddmmyyyy
+const DOB = "17091999"; 
 const EMAIL = "john@xyz.com";
 const ROLL_NUMBER = "ABCD123";
 
-// ✅ GET endpoint to check server health
+
 app.get('/bfhl', (req, res) => {
     res.status(200).json({ operation_code: 1 });
 });
@@ -43,7 +43,7 @@ app.post('/bfhl', (req, res) => {
             }
         });
 
-        // ✅ Reverse & alternating caps
+        
         let reversed = allAlphabets.split('').reverse().join('');
         let concat_string = '';
         for (let i = 0; i < reversed.length; i++) {
@@ -75,4 +75,4 @@ app.get('/bfhl', (req, res) => {
   
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
