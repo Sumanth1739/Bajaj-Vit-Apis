@@ -5,10 +5,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const FULL_NAME = "john_doe";
-const DOB = "17091999"; 
-const EMAIL = "john@xyz.com";
-const ROLL_NUMBER = "ABCD123";
+const FULL_NAME = "Singamreddy Sumanth Reddy";
+const DOB = "11102004"; 
+const EMAIL = "sumanthreddysingamreddy11@gmail.com";
+const ROLL_NUMBER = "22BKT0075";
 
 
 app.get('/bfhl', (req, res) => {
